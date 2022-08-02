@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/*Zerando o css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fundo tela*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: rgba(255, 255, 255, 0.555);
+    font-family: 'Lato',sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(17,17,17,0.8),rgba(20,20,20,1)),url(../imagens/Academia.jpg);
+    background-position: center center;
+    background-position-y:0px ;
+    background-size: cover;
+
+}
+
+/*Menu - Header - Navbar*/
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba(22,22,22,0.2);
+}
+.menu-content{
+    text-transform:;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.30rem;
+}
+
+.logo{
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    padding: 1.2rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.menu-content .list-itens a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before{
+    width: 100%;
+}
+
+/*Centro - conteudo principal*/
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    display: inline;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Textos - Conteudo Principal*/
+
+.primary-text{
+    text-shadow: 2rem black;
+    color: rgb(83, 83, 83);
+    width: 850px;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.box{
+    border-radius: 1rem;
+    border: none;
+    background: rgb(156, 156, 156);
+    margin: 20px;
+
+}
+
+.second-text{
+    margin-bottom: 7rem;
+    font-size: 1.5rem;
+    color: rgb(82, 80, 76);
+    text-transform: uppercase;
+    text-align: center;
+}
+/*Botões*/
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(83, 83, 83);
+    text-transform: capitalize;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+    text-align: justify;
+}
+.btns button:hover{
+    color: rgba(53, 53, 53, 0.548);
+    border: none;
+}
+.btns button::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(61, 61, 61, 0);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button::hover {
+    width: 100px;
+}
+
+/*Copyright*/
+#direito{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 110%;
+    text-transform: uppercase;
+    position: fixed;
+    margin-top: 40%;
+    text-align: center;
+    color: rgba(88, 88, 88, 0.678);
+    font-weight: bold;
+}
+
